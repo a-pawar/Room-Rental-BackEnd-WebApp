@@ -118,6 +118,14 @@ export const create = async (req, res) => {
       district: address?.address?.district,
       city: address?.address?.city,
       country: address?.address?.country,
+      // street: address?.address?.street,
+      // district: address?.address?.district,
+      // city: address?.address?.city,
+      // country: address?.address?.country,
+      street: address?.street,
+      district: address?.district,
+      city: address?.city,
+      country: address?.countryName,
       completeMap: address,
       openCageMap: geo
     }).save();
